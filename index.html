@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+  <head>
+    <title>QGIS Tanzania User Group</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:900,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        $('#other_groups').bind('change', function () {
+            var url = $(this).val();
+            if (url) {
+                window.location = url;
+            }
+            return false;
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- QGIS.org NAVBAR -->
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://qgis.org"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="http://qgis.org/en/site/about/index.html">Discover QGIS</a></li>
+            <li><a href="http://qgis.org/en/site/forusers/index.html">For Users</a></li>
+            <li><a href="http://qgis.org/en/site/getinvolved/index.html">Get Involved</a></li>
+            <li><a href="http://qgis.org/en/docs/index.html">Documentation</a></li>
+            <li class="navbar-dropdown">
+              <div class="select-dropdown">
+              <select id="other_groups">
+                <option value="" title="none">Other User Groups</option>
+                <optgroup label="Africa">
+                  <option title="Tanzania" value="#" selected>Tanzania</option>
+                </optgroup>
+                <optgroup label="America">
+                  <option title="USA" value="http://qgis.us/">U.S.A.</option>
+                </optgroup>
+                <optgroup label="Europe">
+                  <option title="Holland" value="http://www.qgis.nl/">Holland</option>
+                  <option title="IE" value="https://ieqgis.wordpress.com/category/qgis/">Ireland</option>
+                  <option title="Italy" value="http://www.qgis.it/">Italy</option>
+                  <option title="Portugal" value="http://qgis.pt/">Portugal</option>
+                  <option title="Switzerland" value="http://qgis.ch">Switzerland</option>
+                  <option title="UK" value="http://qgis.uk/">UK</option>
+                </optgroup>
+                <optgroup label="Oceania">
+                  <option title="ANZ" value="https://sites.google.com/site/ausqgis/home">Australia &amp; NZ</option>
+                </optgroup>
+              </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- TITLE & PAGE NAV -->
+    <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 page-title">QGIS Tanzania User Group</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-md-offset-3">
+            <ul class="page-nav">
+              <li><a href="#about">About</a></li>
+              <li><a href="#meetings">Meetings</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="http://qgis.org" target="_blank">QGIS.org</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 lead byline">Supporting Tanzania-based users of <a href="http://qgis.org">QGIS</a>, a free and open source Geographic Information System.
+            <p class="osgeo-line">QGIS is an <a href="http://www.osgeo.org/"><img src="images/osgeo_logo.png"> </a> project.</p>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12"><br/><br/><br/><br/><br/><br/></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3>User Meetings</h3>
+              <p class="lead">Join our monthly meetings in Dar es Salaam and other major cities. <a class="link" href="#meetings">Details &raquo;</a>
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Online Discussions</h3>
+              <p class="lead"><a href="https://lists.osgeo.org/mailman/listinfo/tanzania-gis">
+                Join our mailing list</a> to discuss GIS projects, challenges, and opportunities in Tanzania.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Learn about QGIS</h3>
+              <p class="lead"><a href="http://qgis.org/en/site/">QGIS</a> is the most popular open source GIS desktop tool in the world.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- START THE FEATURETTES -->
+        <div class="container">
+          <hr class="featurette-divider">
+          <a name="about"></a>
+          <div class="featurette">
+            <h2 class="featurette-heading">Group Goals:</h2>
+            <p class="lead">
+              <ul class="lead">
+                <li>Promote the use of QGIS in Tanzania's government agencies, NGOs, and private sector</li>
+                <li>Provide training and support for new QGIS users in Tanzania</li>
+                <li>Coordinate local QGIS development and customization for Tanzanian needs</li>
+                <li>Share information about QGIS through meetings, social media, and local GIS events</li>
+                <li>Support translation of QGIS documentation into Swahili</li>
+                <li>Create specialized modules for local applications (agriculture, urban planning, conservation)</li>
+                <li>Organize regular user meetings across major Tanzanian cities</li>
+                <li>Connect Tanzanian QGIS users with the global QGIS community</li>
+              </ul>
+            </p>
+          </div>
+
+          <hr class="featurette-divider">
+          <a name="meetings"></a>
+
+          <div class="featurette">
+            <h2 class="featurette-heading"><span class="muted">Join Our Community</span></h2>
+            <p class="lead">
+            We hold monthly meetings in Dar es Salaam on the first Thursday of each month. Regional chapters in Arusha, Mwanza, and Dodoma meet regularly as well. Our meetings include:
+            </p>
+            <p class="lead">
+            <ul>
+              <li>QGIS tutorials and workshops</li>
+              <li>Presentations of local GIS projects</li>
+              <li>Problem-solving sessions</li>
+              <li>Networking opportunities</li>
+            </ul>
+            </p>
+            <p>
+              <font size='+2'><b>Next Meeting:</b></font><br>
+              Date: First Thursday of next month<br>
+              Time: 14:00 - 17:00<br>
+              Location: Tanzania Commission for Science and Technology (COSTECH), Dar es Salaam<br>
+              Topic: Introduction to QGIS for Conservation Planning
+            </p>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="featurette">
+            <h2 class="featurette-heading">New to QGIS? Join us!</h2>
+            <p class="lead">Whether you're a GIS professional or just getting started, our community welcomes you. We offer regular training sessions and workshops suitable for beginners. Our members work in various sectors including land management, conservation, urban planning, and agriculture.</p>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="featurette">
+            <h2 class="featurette-heading">Connect Online <span class="muted">Join &amp; Introduce Yourself.</span></h2>
+            <p class="lead">
+              Join our active online community through:
+              <ul>
+                <li>Our <a href="https://lists.osgeo.org/mailman/listinfo/tanzania-gis">mailing list</a> for discussions and announcements</li>
+                <li>WhatsApp group for quick questions and updates</li>
+                <li>Quarterly virtual meetups for remote members</li>
+              </ul>
+            </p>
+          </div>
+
+          <hr class="featurette-divider">
+          <a name="contact"></a>
+          <div class="featurette">
+            <h2 class="featurette-heading">Stay Connected <span class="muted">Follow Us.</span></h2>
+            <p class="lead">Follow our updates on <a href="https://twitter.com/QGISTanzania">Twitter</a> and join our <a href="https://lists.osgeo.org/mailman/listinfo/tanzania-gis">Mailing List</a>. For general inquiries, email us at qgis.tanzania@gmail.com</p>
+          </div>
+
+          <hr class="featurette-divider">
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <ul id="social">
+          <li id="twitter"><a href="https://twitter.com/QGISTanzania" class="external"><div></div></a></li>
+          <li id="facebook"><a href="https://www.facebook.com/groups/qgistanzania" class="external"><div></div></a></li>
+          <li id="github"><a href="http://github.com/qgis/" class="external"><div></div></a></li>
+          <li id="contact"><a href="https://lists.osgeo.org/mailman/listinfo/tanzania-gis"><div></div></a></li>
+        </ul>
+      </div>
+      <p class="footer credit">If not stated otherwise, all content is licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 licence (CC BY-SA)</a></p>
+      <p class="footer credit">Select graphics from<a href="http://thenounproject.com"> The Noun Project</a></p>
+    </footer>
+  </body>
+</html>
